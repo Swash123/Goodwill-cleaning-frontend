@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goodwill Cleaning - Our Team</title>
+    <title>Contact Us | Goodwill Cleaning</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -15,28 +15,20 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-    <link rel="stylesheet" href="./css/animate.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
+
   <body>
-    <!-- Desktop Navigation -->
+    <!-- Include the desktop navigation from your existing code -->
     <section class="desktop-navigation">
         <div class="top-nav py-1" id="top-nav">
           <div class="container">
@@ -89,8 +81,9 @@
         </div>
       </section>
 
-
-      <section class="mobile-navigation">
+    <!-- Include the mobile navigation -->
+    <!-- Mobile-Navigation -->
+    <section class="mobile-navigation">
         <div class="mobile-navbar">
           <div class="logo-section">
             <a href="#"><img src="./images/logo.png" /></a>
@@ -144,79 +137,106 @@
         </div>
       </section>
 
-    <!-- Team Section -->
-    <section class="team-section py-5">
-      <div class="container">
-        <h2 class="text-center" data-aos="fade-up">Meet Our Team</h2>
-        <div class="line mx-auto" data-aos="fade-up"></div>
-        <div class="row justify-content-center mt-4">
-          <!-- Team Member 1 -->
-          <div class="col-md-4 mb-4" data-aos="fade-up">
-            <div class="team-member">
-              <img
-                src="./images/staff-2.jpg"
-                alt="Team Member 1"
-                class="img-fluid"
-              />
-              <div class="social-hover">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+    <!-- Contact Page Content -->
+    <section class="contact-page">
+      <!-- Top Section: Google Map -->
+      <div class="map-container" style="width: 100%; height: 400px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093176!2d144.95373521550363!3d-37.81627974202132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1df5c0b%3A0x5045675218ce6e0!2zTGFuZG1hcmsgU3QsIFZpY3RvcmlhLCBBdXN0cmFsaWE!5e0!3m2!1sen!2sus!4v1665747162364!5m2!1sen!2sus"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <!-- Bottom Section: Company Info and Contact Form -->
+      <div class="container my-5">
+        <div class="row">
+          <!-- Company Info Section -->
+          <div class="col-12 col-md-6" data-aos="fade-up">
+            <h2 class="mb-4">Our Office</h2>
+            <div class="company-info p-4 bg-light rounded ">
+              <div class="info-item mb-4 d-flex align-items-center">
+                <i class="fa-solid fa-location-dot fa-2x text-primary"></i>
+                <div class="ms-3">
+                  <h5>Address</h5>
+                  <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                </div>
               </div>
-              <div class="team-info">
-                <h4>John Doe</h4>
-                <p class="text-muted">Founder & CEO</p>
+          
+              <div class="info-item mb-4 d-flex align-items-center">
+                <i class="fa-solid fa-phone fa-2x text-success"></i>
+                <div class="ms-3">
+                  <h5>Phone</h5>
+                  <p>+2 392 3929 210</p>
+                </div>
+              </div>
+          
+              <div class="info-item mb-4 d-flex align-items-center">
+                <i class="fa-solid fa-envelope fa-2x text-danger"></i>
+                <div class="ms-3">
+                  <h5>Email</h5>
+                  <p>info@yourdomain.com</p>
+                </div>
+              </div>
+          
+              <div class="info-item d-flex align-items-center">
+                <i class="fa-solid fa-clock fa-2x text-info"></i>
+                <div class="ms-3">
+                  <h5>Office Hours</h5>
+                  <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Team Member 2 -->
-          <div class="col-md-4 mb-4" data-aos="fade-up">
-            <div class="team-member">
-              <img
-                src="./images/staff-2.jpg"
-                alt="Team Member 2"
-                class="img-fluid"
-              />
-              <div class="social-hover">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+          <!-- Contact Form Section -->
+          <div class="col-12 col-md-6" data-aos="fade-up">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+              <div class="form-group mb-3">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your full name"
+                  required
+                />
               </div>
-              <div class="team-info">
-                <h4>Jane Smith</h4>
-                <p class="text-muted">Marketing Manager</p>
+              <div class="form-group mb-3">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
               </div>
-            </div>
-          </div>
-
-          <!-- Team Member 3 -->
-          <div class="col-md-4 mb-4" data-aos="fade-up">
-            <div class="team-member">
-              <img
-                src="./images/staff-2.jpg"
-                alt="Team Member 3"
-                class="img-fluid"
-              />
-              <div class="social-hover">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+              <div class="form-group mb-3">
+                <label for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Enter your message"
+                  required
+                ></textarea>
               </div>
-              <div class="team-info">
-                <h4>Michael Brown</h4>
-                <p class="text-muted">Operations Manager</p>
-              </div>
-            </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- footer -->
+    <!-- Include the footer from your existing code -->
     <footer>
         <div class="container">
           <div class="row">
@@ -316,18 +336,22 @@
           </div>
         </div>
   
-        <div class="copyright-section" >
+        <div class="copyright-section" data-aos="fade-up">
           <span class="copy"
             >Copyright © 2024 Goodwill Cleaning | All rights reserved</span
           >&nbsp; Site by: <a href="#">CyBurning</a>
         </div>
       </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/app.js">
-    </script>
+      <script src="./vendor/jquery/jquery.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="./js/app.js"></script>
   </body>
 </html>
