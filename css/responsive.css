@@ -1,0 +1,61 @@
+@media (max-width: 1000px) {
+
+  body, html {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  }
+
+    .desktop-navigation {
+      display: none;
+    }
+    .mobile-navigation{
+        display: block;
+    }
+
+    .navbar{
+        height: auto;
+    }
+
+    .about-section .about-left .hours-time {
+      position: absolute;
+      left: 10px;
+      background-color: var(--brand-color-primary);
+      top: -19px;
+      border-radius: 10px;
+    }
+
+    .ml-4 {
+      margin-left: 10px;
+    }
+    
+    .mr-4 {
+      margin-right: 10px;
+    }
+
+    .testomonial-section .test-card .test-image{
+      background-size: cover;
+      height: 48px;
+      border-radius: 50%;
+    }
+
+    .project-card .overlay{
+      position: absolute;
+      top: 0;
+      height: 100%;
+      opacity: 1;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      background-color: rgba(8, 74, 112, 0.7);
+    }
+
+    .blog-card .blog-contains{
+      bottom: 8px;
+      padding: 10px;
+    }
+
+    .blog-card{
+      margin-bottom: 15px;
+    }
+
+  }
