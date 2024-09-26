@@ -33,6 +33,57 @@ href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
 rel="stylesheet"
 />
 
+<style>
+
+ /* Jacket Ad Styles */
+ .jacket-ad {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255); /* Black background with opacity */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100000;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 1s ease-out, visibility 1s ease-out;
+        }
+
+        .jacket-ad-content {
+            position: relative;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 50%;
+        }
+
+        /* Close button */
+        .jacket-ad-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 1px 10px;
+            border-radius: 50%;
+        }
+
+        /* Fade out effect */
+        .jacket-ad.hide {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+      
+</style>
+
   <!-- LightGallery CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
 
@@ -42,6 +93,15 @@ rel="stylesheet"
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
+
+     <!-- Jacket Ad -->
+     <div id="jacket-ad" class="jacket-ad">
+      <div class="jacket-ad-content">
+          <button class="jacket-ad-close" id="close-ad">&times;</button>
+          <img src="./images/ads.jpg" alt="Jacket Ad" />
+      </div>
+  </div>
+
     <!-- Desktop Navigation -->
     <section class="desktop-navigation">
       <div class="top-nav py-1" id="top-nav">
@@ -895,7 +955,7 @@ rel="stylesheet"
       <div class="container">
         <div class="tagline" data-aos="fade-up">Price & Plans</div>
         <div class="title" data-aos="fade-up">Choose Your Perfect Plans</div>
-        <div class="row gap-6">
+        <div class="row gap-5" style="justify-content: center;">
           <div class="package-card col-12 col-md-2 pb-4" data-aos="fade-up">
             <div class="icon-container">
               <img class="w-100" src="./images/house.png" alt="" />
@@ -1092,5 +1152,23 @@ rel="stylesheet"
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const jacketAd = document.getElementById("jacket-ad");
+      const closeAdButton = document.getElementById("close-ad");
+
+      // Set a timeout to hide the jacket ad after 3 seconds
+      setTimeout(function () {
+          jacketAd.classList.add("hide");
+      }, 3000); // 3 seconds
+
+      // Add event listener to the close button
+      closeAdButton.addEventListener("click", function () {
+          jacketAd.classList.add("hide");
+      });
+  });
+</script>
+
   </body>
 </html>
