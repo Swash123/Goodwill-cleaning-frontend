@@ -72,6 +72,20 @@
     width: 100%;
 }
 
+.slider-contains{
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 25px 15px;
+  position: relative;
+  bottom: -45px;
+  left: 27px;
+  background-color: transparent;
+}
+
+.swiper-button-next, .swiper-button-prev {
+ 
+  top: 73px;
+}
+
   
 
   }

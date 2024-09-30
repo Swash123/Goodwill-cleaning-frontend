@@ -7,6 +7,10 @@
   --gray-dark: rgb(114, 113, 113);
 }
 
+ h2 {
+  margin-bottom: 19px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -14,6 +18,10 @@
 a {
   text-decoration: none;
   color: #000;
+}
+
+.team-section, .service-section{
+  padding-top: 80px !important;
 }
 
 .mb-8{
@@ -232,14 +240,23 @@ img {
   height: 100%;
 }
 
+.slider-contains{
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 25px 15px;
+  position: relative;
+  bottom: -80px;
+  left: 27px;
+}
+
 .subheading {
-  color: var(--gray);
-  font-size: 22px;
+  color: #fff;
+  font-size: 30px;
+  font-style: italic;
 }
 
 .big-heading {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 
 .btn-round {
@@ -430,6 +447,9 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   cursor: pointer;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
 }
 
 .service-section .icon-container img {
@@ -717,12 +737,26 @@ p {
 .package-section .icon-container {
   height: 80px;
   width: 80px;
-  background-color: var(--brand-color-primary);
+  background-color: #fff;
+  box-shadow: 0px 18px 10px rgba(0,0,0,0.1);
   border-radius: 50%;
   padding: 16px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.about-section .icon-container{
+  height: 50px;
+  width: 60px;
+  background-color: #fff;
+  box-shadow: 0px 18px 10px rgba(0,0,0,0.1);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.about-section ul{
+  list-style-type: none;
 }
 
 .package-section .package-card .package-info {

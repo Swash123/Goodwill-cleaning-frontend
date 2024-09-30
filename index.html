@@ -13,6 +13,13 @@
     />
 
     <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicon.png"
+      sizes="60x60"
+    />
+
+    <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
@@ -24,68 +31,78 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
 
-<!-- Boxicons -->
-<link
-href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-rel="stylesheet"
-/>
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-<style>
+    <style>
+      /* Jacket Ad Styles */
+      .jacket-ad {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(
+          255,
+          255,
+          255
+        ); /* Black background with opacity */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100000;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 1s ease-out, visibility 1s ease-out;
+      }
 
- /* Jacket Ad Styles */
- .jacket-ad {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgb(255, 255, 255); /* Black background with opacity */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 100000;
-            opacity: 1;
-            visibility: visible;
-            transition: opacity 1s ease-out, visibility 1s ease-out;
-        }
+      .jacket-ad-content {
+        position: relative;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 50%;
+      }
 
-        .jacket-ad-content {
-            position: relative;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 50%;
-        }
+      /* Close button */
+      .jacket-ad-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 1px 10px;
+        border-radius: 50%;
+      }
 
-        /* Close button */
-        .jacket-ad-close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #ff0000;
-            color: #fff;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-            padding: 1px 10px;
-            border-radius: 50%;
-        }
+      /* Fade out effect */
+      .jacket-ad.hide {
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
 
-        /* Fade out effect */
-        .jacket-ad.hide {
-            opacity: 0;
-            visibility: hidden;
-        }
-
-      
-</style>
-
-  <!-- LightGallery CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
+    <!-- LightGallery CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="./css/animate.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -93,14 +110,13 @@ rel="stylesheet"
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
-
-     <!-- Jacket Ad -->
-     <div id="jacket-ad" class="jacket-ad">
+    <!-- Jacket Ad -->
+    <div id="jacket-ad" class="jacket-ad">
       <div class="jacket-ad-content">
-          <button class="jacket-ad-close" id="close-ad">&times;</button>
-          <img src="./images/ads.jpg" alt="Jacket Ad" />
+        <button class="jacket-ad-close" id="close-ad">&times;</button>
+        <img src="./images/ads.jpg" alt="Jacket Ad" />
       </div>
-  </div>
+    </div>
 
     <!-- Desktop Navigation -->
     <section class="desktop-navigation">
@@ -111,10 +127,10 @@ rel="stylesheet"
               <div class="header-contact d-flex align-items-center">
                 <i class="fa-solid fa-phone icon"></i> &nbsp;
                 <span class="gray-text">Phone no: </span> &nbsp;
-                <span class="imp-text">+977-9841221213</span> &nbsp; &nbsp;
+                <span class="imp-text">0420900310</span> &nbsp; &nbsp;
                 <i class="fa-regular fa-envelope icon"></i> &nbsp;
                 <span class="gray-text">Email: </span> &nbsp;
-                <span class="imp-text">abc@gmail.com</span>
+                <span class="imp-text">anilsah37618@gmail.com</span>
               </div>
               <div class="social-media d-flex gap-3 align-items-center">
                 <a href="#"
@@ -159,7 +175,7 @@ rel="stylesheet"
     <section class="mobile-navigation">
       <div class="mobile-navbar">
         <div class="logo-section">
-          <a href="#"><img src="./images/logo.png" /></a>
+          <a href="index.html"><img src="./images/logo.png" /></a>
         </div>
 
         <i class="fa-solid fa-bars menu-bars"></i>
@@ -167,12 +183,12 @@ rel="stylesheet"
           <i class="fa-solid fa-x cross"></i>
           <ul>
             <li class="selected"><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="project.html">Project</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -218,37 +234,27 @@ rel="stylesheet"
           <!-- First Slide -->
           <div
             class="swiper-slide"
-            style="background-image: url('images/bg_1.jpg')"
+            style="background-image: url('images/slider-01.png')"
           >
             <div class="container">
               <div
                 class="slider-info row align-items-center justify-content-start"
               >
-                <div class="col-md-6 ftco-animate">
-                  <h2 class="subheading" data-aos="fade-up">
-                    Leave the house cleaning chores to us
-                  </h2>
-                  <h1
-                    class="mb-4 big-heading"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    Let us do the dirty work, so you don't have to.
+                <div
+                  class="col-md-6 ftco-animate slider-contains"
+                  data-aos="fade-up"
+                >
+                  <h1 class="mb-4 big-heading" data-aos-delay="100">
+                    Goodwill Cleaning Pvt Ltd
                   </h1>
-                  <p data-aos="fade-up" data-aos-delay="200">
-                    <a
-                      href="#"
-                      class="btn btn-primary btn-round mr-md-4 py-2 px-4"
-                      >Learn more <span class="ion-ios-arrow-forward"></span
-                    ></a>
-                  </p>
+                  <h2 class="subheading">"Cleaning With Care"</h2>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Second Slide -->
-          <div
+          <!-- <div
             class="swiper-slide"
             style="background-image: url('images/bg_1.jpg')"
           >
@@ -277,7 +283,7 @@ rel="stylesheet"
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Add more slides as needed -->
         </div>
@@ -384,56 +390,103 @@ rel="stylesheet"
       <div class="container">
         <div class="row">
           <div class="about-left col-md-6 col-12">
-            <img src="./images/image_1.jpg" data-aos="fade-up" alt="" />
+            <img
+              src="./images/window-cleaning-about.jpg"
+              data-aos="fade-up"
+              alt=""
+            />
             <div class="hours-time" data-aos="fade-left">
-              <div class="tagline m-md-4 m-3" data-aos="fade-left" data-aos-delay="200">Business Hours</div>
+              <div
+                class="tagline m-md-4 m-3"
+                data-aos="fade-left"
+                data-aos-delay="200"
+              >
+                Business Hours
+              </div>
               <div class="fact-days">
-                <span class="small-info m-md-4 m-2" data-aos="fade-left" data-aos-delay="200">Opening Days</span>
+                <span
+                  class="small-info m-md-4 m-2"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  >Opening Days</span
+                >
                 <div class="days">
-                  <span class="imp-text ml-4" data-aos="fade-left" data-aos-delay="200">Monday - Fridays</span>
-                  <span class="gray-text mr-4" data-aos="fade-left" data-aos-delay="200">9am to 20pm</span>
+                  <span
+                    class="imp-text ml-4"
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                    >Monday - Sataurday</span
+                  >
+                  <span
+                    class="gray-text mr-4"
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                    >6am to 9pm</span
+                  >
                   <br />
-                  <span class="imp-text ml-4" data-aos="fade-left" data-aos-delay="200">Satuarday</span>
-                  <span class="gray-text" data-aos="fade-left" data-aos-delay="200">9am to 17pm</span>
                 </div>
-                <span class="small-info m-md-4 m-2" data-aos="fade-left" data-aos-delay="200">Vacations</span>
+                <span
+                  class="small-info m-md-4 m-2"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  >Vacations</span
+                >
                 <div class="days">
-                  <span class="gray-text mx-md-4 mx-2" data-aos="fade-left" data-aos-delay="200">All Sunday Days</span>
+                  <span
+                    class="gray-text mx-md-4 mx-2"
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                    >All Sunday Days</span
+                  >
                   <br />
-                  <span class="gray-text mx-md-4 mx-2" data-aos="fade-left" data-aos-delay="200">All Offical Days</span>
                 </div>
               </div>
               <div class="about-contact p-4 mt-md-4 mt-2">
-                <div class="title" data-aos="fade-left" data-aos-delay="200">For Emergency Cases</div>
-                <div class="contact-text" data-aos="fade-left" data-aos-delay="200">(+01) 123 456 7890</div>
+                <div class="title" data-aos="fade-left" data-aos-delay="200">
+                  For Emergency Cases
+                </div>
+                <div
+                  class="contact-text"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
+                  0420900310
+                </div>
               </div>
             </div>
           </div>
           <div class="about-right col-md-6 col-12 py-4" data-aos="fade-right">
-            <span class="tagline">Welcome to Cleaning Company</span>
-            <h2 class="title">Let's make you fresher than ever</h2>
+            <span class="tagline">Welcome to Goodwill Cleaning</span>
+            <h2 class="title">Best Cleaning Service in Austrila</h2>
             <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia. It is a
-              paradisematic country, in which roasted parts of sentences fly
-              into your mouth.
+              We provides professional cleaning services with a commitment to
+              excellence, reliability, and customer satisfaction. Whether it's
+              residential or commercial spaces, our team of expert cleaners
+              ensures every corner shines. We use eco-friendly products and
+              cutting-edge equipment to deliver spotless results, making your
+              environment healthier and more enjoyable. Trust us for all your
+              cleaning needs and experience the difference of a fresh,
+              immaculate space.
             </p>
             <div class="facts-and-figure px-2 py-4">
               <div class="row">
                 <div class="col-4">
-                  <span class="fact-number" data-aos="fade-up" >45 +</span>
-                  <div class="fact-title" data-aos="fade-up">Years of Experience</div>
+                  <span class="fact-number" data-aos="fade-up">6 +</span>
+                  <div class="fact-title" data-aos="fade-up">
+                    Years of Experience
+                  </div>
                 </div>
                 <div class="col-4">
-                  <span class="fact-number" data-aos="fade-up">2,342 +</span>
-                  <div class="fact-title" data-aos="fade-up">Happy Customers</div>
+                  <span class="fact-number" data-aos="fade-up">10</span>
+                  <div class="fact-title" data-aos="fade-up">
+                    Working Staffs
+                  </div>
                 </div>
                 <div class="col-4">
                   <span class="fact-number" data-aos="fade-up">30 +</span>
-                  <div class="fact-title" data-aos="fade-up">Buildings Cleaned</div>
+                  <div class="fact-title" data-aos="fade-up">
+                    Buildings Cleaned
+                  </div>
                 </div>
               </div>
             </div>
@@ -448,37 +501,23 @@ rel="stylesheet"
         <span class="tagline" data-aos="fade-up">Services</span>
         <h2 class="title" data-aos="fade-up">How We Work</h2>
         <div class="row">
-          <div class="service-card col-12 col-md-4" data-aos="fade-up" data-aos="fade-up">
+          <div
+            class="service-card col-12 col-md-4"
+            data-aos="fade-up"
+            data-aos="fade-up"
+          >
             <a href="detail.html">
               <div class="row">
                 <div class="icon-container col-md-2 col-2">
                   <div class="bg"></div>
-                  <img src="./images/house.png" alt="" />
+                  <img src="./images/commercial-service.png" alt="" />
                 </div>
                 <div class="service-contains col-md-8 col-9">
-                  <h2 class="heading">Office Cleaning</h2>
+                  <h2 class="heading">Commercial Cleaning</h2>
                   <p class="gray-text-dark">
-                    Even the all-powerful Pointing has no control about the
-                    blind texts it is an almost unorthographic.
-                  </p>
-                  <div class="links">Read More</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="service-card col-12 col-md-4" data-aos="fade-up">
-            <a href="detail.html">
-              <div class="row">
-                <div class="icon-container col-md-2 col-2">
-                  <div class="bg"></div>
-                  <img src="./images/house.png" alt="" />
-                </div>
-                <div class="service-contains col-md-8 col-9">
-                  <h2 class="heading">Office Cleaning</h2>
-                  <p class="gray-text-dark">
-                    Even the all-powerful Pointing has no control about the
-                    blind texts it is an almost unorthographic.
+                    We offer comprehensive commercial cleaning services tailored
+                    to meet the unique needs of businesses, offices, and public
+                    spaces.
                   </p>
                   <div class="links">Read More</div>
                 </div>
@@ -491,13 +530,53 @@ rel="stylesheet"
               <div class="row">
                 <div class="icon-container col-md-2 col-2">
                   <div class="bg"></div>
-                  <img src="./images/house.png" alt="" />
+                  <img src="./images/office-cleaning.png" alt="" />
                 </div>
                 <div class="service-contains col-md-8 col-9">
                   <h2 class="heading">Office Cleaning</h2>
                   <p class="gray-text-dark">
-                    Even the all-powerful Pointing has no control about the
-                    blind texts it is an almost unorthographic.
+                    Our office cleaning services are designed to keep your
+                    workspace fresh, organized, and sanitary.
+                  </p>
+                  <div class="links">Read More</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="service-card col-12 col-md-4" data-aos="fade-up">
+            <a href="detail.html">
+              <div class="row">
+                <div class="icon-container col-md-2 col-2">
+                  <div class="bg"></div>
+                  <img src="./images/carpet-cleaner.png" alt="" />
+                </div>
+                <div class="service-contains col-md-8 col-9">
+                  <h2 class="heading">Carpet Cleaning</h2>
+                  <p class="gray-text-dark">
+                    Our carpet cleaning services remove deep-seated dirt,
+                    stains, and allergens from your carpets, leaving them fresh,
+                    sanitized, and revitalized.
+                  </p>
+
+                  <div class="links">Read More</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="service-card col-12 col-md-4" data-aos="fade-up">
+            <a href="#">
+              <div class="row">
+                <div class="icon-container col-md-2 col-2">
+                  <div class="bg"></div>
+                  <img src="./images/window-cleaning.png" alt="" />
+                </div>
+                <div class="service-contains col-md-8 col-9">
+                  <h2 class="heading">Window Cleaning</h2>
+                  <p class="gray-text-dark">
+                    Our window cleaning services ensure crystal-clear,
+                    streak-free windows for your office or commercial space.
                   </p>
                   <div class="links">Read More</div>
                 </div>
@@ -510,13 +589,13 @@ rel="stylesheet"
               <div class="row">
                 <div class="icon-container col-md-2 col-2">
                   <div class="bg"></div>
-                  <img src="./images/house.png" alt="" />
+                  <img src="./images/gym-station.png" alt="" />
                 </div>
                 <div class="service-contains col-md-8 col-9">
-                  <h2 class="heading">Office Cleaning</h2>
+                  <h2 class="heading">Gym Cleaning</h2>
                   <p class="gray-text-dark">
-                    Even the all-powerful Pointing has no control about the
-                    blind texts it is an almost unorthographic.
+                    Our gym cleaning services focus on maintaining a hygienic
+                    and safe environment for fitness centers.
                   </p>
                   <div class="links">Read More</div>
                 </div>
@@ -529,32 +608,16 @@ rel="stylesheet"
               <div class="row">
                 <div class="icon-container col-md-2 col-2">
                   <div class="bg"></div>
-                  <img src="./images/house.png" alt="" />
+                  <img
+                    src="./images/DALL·E 2024-09-30 13.47.37 - A professional icon representing Strata Cleaning. The icon features a high-rise building with clean windows, a broom or cleaning tool beside the build.webp"
+                    alt=""
+                  />
                 </div>
                 <div class="service-contains col-md-8 col-9">
-                  <h2 class="heading">Office Cleaning</h2>
+                  <h2 class="heading">Strata Cleaning</h2>
                   <p class="gray-text-dark">
-                    Even the all-powerful Pointing has no control about the
-                    blind texts it is an almost unorthographic.
-                  </p>
-                  <div class="links">Read More</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="service-card col-12 col-md-4" data-aos="fade-up">
-            <a href="#">
-              <div class="row">
-                <div class="icon-container col-md-2 col-2">
-                  <div class="bg"></div>
-                  <img src="./images/house.png" alt="" />
-                </div>
-                <div class="service-contains col-md-8 col-9">
-                  <h2 class="heading">Office Cleaning</h2>
-                  <p class="gray-text-dark">
-                    Even the all-powerful Pointing has no control about the
-                    blind texts it is an almost unorthographic.
+                    Our strata cleaning services are tailored to meet the unique
+                    needs of multi-level residential and commercial properties.
                   </p>
                   <div class="links">Read More</div>
                 </div>
@@ -569,14 +632,16 @@ rel="stylesheet"
     <div class="team-section">
       <div class="container">
         <div class="row">
-          <div class="team-info col-12 col-md-4"data-aos="fade-left">
+          <div class="team-info col-12 col-md-4" data-aos="fade-left">
             <div class="tagline">Team and Staffs</div>
             <h2 class="title">Our Team</h2>
             <p>
               A small river named Duden flows by their place and supplies it
               with the necessary regelialia. It is a paradisematic country
             </p>
-            <a href="our-team.html" class="btn btn-primary btn-round mr-md-4 py-2 px-4"
+            <a
+              href="our-team.html"
+              class="btn btn-primary btn-round mr-md-4 py-2 px-4"
               >Learn more <span class="ion-ios-arrow-forward"></span
             ></a>
           </div>
@@ -584,13 +649,17 @@ rel="stylesheet"
             <div class="row">
               <div class="team-card col-12 col-md-4" data-aos="fade-up">
                 <div class="img-container w-100">
-                  <img class="w-100" src="./images/staff-2.jpg" alt="" />
+                  <img class="w-100" src="./images/default.png" alt="" />
                 </div>
                 <div class="team-member-info">
                   <div class="bg"></div>
-                  <div class="name">Lloyd Wilson</div>
-                  <div class="designation">Office Cleaner</div>
-                  <div class="team-social-icon" data-aos="fade-up" data-aos-delay="100">
+                  <div class="name">Anil Kumar Shah</div>
+                  <div class="designation">Office Excutive</div>
+                  <div
+                    class="team-social-icon"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
                     <a href="#"
                       ><i class="team-social fa-brands fa-facebook"></i
                     ></a>
@@ -609,13 +678,17 @@ rel="stylesheet"
 
               <div class="team-card col-12 col-md-4" data-aos="fade-up">
                 <div class="img-container w-100">
-                  <img class="w-100" src="./images/staff-2.jpg" alt="" />
+                  <img class="w-100" src="./images/default.png" alt="" />
                 </div>
                 <div class="team-member-info">
                   <div class="bg"></div>
-                  <div class="name">Lloyd Wilson</div>
-                  <div class="designation">Office Cleaner</div>
-                  <div class="team-social-icon" data-aos="fade-up" data-aos-delay="100">
+                  <div class="name">Sandesh shrestha</div>
+                  <div class="designation">Admin</div>
+                  <div
+                    class="team-social-icon"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
                     <a href="#"
                       ><i class="team-social fa-brands fa-facebook"></i
                     ></a>
@@ -634,13 +707,17 @@ rel="stylesheet"
 
               <div class="team-card col-12 col-md-4" data-aos="fade-up">
                 <div class="img-container w-100">
-                  <img class="w-100" src="./images/staff-2.jpg" alt="" />
+                  <img class="w-100" src="./images/default.png" alt="" />
                 </div>
                 <div class="team-member-info">
                   <div class="bg"></div>
-                  <div class="name">Lloyd Wilson</div>
-                  <div class="designation">Office Cleaner</div>
-                  <div class="team-social-icon" data-aos="fade-up" data-aos-delay="100">
+                  <div class="name">Rajan Nayak</div>
+                  <div class="designation">Admin</div>
+                  <div
+                    class="team-social-icon"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
                     <a href="#"
                       ><i class="team-social fa-brands fa-facebook"></i
                     ></a>
@@ -662,6 +739,75 @@ rel="stylesheet"
       </div>
     </div>
 
+    <!-- Step to  provide Step -->
+    <section class="service-section py-4">
+      <div class="container">
+        <span class="tagline" data-aos="fade-up">What We Offer</span>
+        <h2 class="title" data-aos="fade-up">Our Approach</h2>
+        <div class="row">
+          <div class="service-card col-12 col-md-4" data-aos="fade-up">
+            <a href="#">
+              <div class="row">
+                <div class="icon-container col-md-2 col-2">
+                  <div class="bg"></div>
+                  1
+                </div>
+                <div class="service-contains col-md-8 col-9">
+                  <h2 class="heading">Assessment and Customization</h2>
+                  <p class="gray-text-dark">
+                    We start by evaluating your space's specific cleaning needs,
+                    considering high-traffic areas and your unique requirements.
+                    Our team develops a tailored cleaning plan to ensure
+                    effective and efficient results.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="service-card col-12 col-md-4" data-aos="fade-up">
+            <a href="#">
+              <div class="row">
+                <div class="icon-container col-md-2 col-2">
+                  <div class="bg"></div>
+                  2
+                </div>
+                <div class="service-contains col-md-8 col-9">
+                  <h2 class="heading">Deep Cleaning and Sanitization</h2>
+                  <p class="gray-text-dark">
+                    Utilizing eco-friendly products and advanced techniques, we
+                    perform a comprehensive deep clean, focusing on floors,
+                    surfaces, and high-touch areas to ensure a safe and hygienic
+                    environment.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="service-card col-12 col-md-4" data-aos="fade-up">
+            <a href="#">
+              <div class="row">
+                <div class="icon-container col-md-2 col-2">
+                  <div class="bg"></div>
+                  3
+                </div>
+                <div class="service-contains col-md-8 col-9">
+                  <h2 class="heading">Maintenance and Follow-Up</h2>
+                  <p class="gray-text-dark">
+                    To maintain a consistently clean space, we offer ongoing
+                    maintenance services. Regular follow-ups and scheduled
+                    cleanings ensure long-lasting results and a well-maintained
+                    environment for your property.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- testomonial-section -->
     <div class="testomonial-section">
       <div class="container">
@@ -671,7 +817,6 @@ rel="stylesheet"
           <div class="owl-carousel owl-theme" data-aos="fade-up">
             <!-- Testimonial Card 1 -->
             <div class="test-card col-12">
-              
               <div class="test-profile">
                 <div class="row">
                   <div
@@ -697,7 +842,6 @@ rel="stylesheet"
 
             <!-- Testimonial Card 2 (Repeat for each testimonial) -->
             <div class="test-card col-12">
-             
               <div class="test-profile">
                 <div class="row">
                   <div
@@ -776,15 +920,94 @@ rel="stylesheet"
       </div>
     </div>
 
+    <!-- about-section -->
+    <section class="about-section pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="about-right col-md-6 col-12 py-4" data-aos="fade-right">
+            <span class="tagline">Goodwill Cleaning</span>
+            <h2 class="title">Why Choose Us</h2>
+            <p>
+              At Goodwill Cleaning, we pride ourselves on delivering exceptional
+              cleaning services tailored to your unique needs. Our experienced
+              professionals use eco-friendly products and methods, ensuring a
+              safe environment for you and your loved ones. With our commitment
+              to reliability and customer satisfaction, you can trust us to
+              maintain a pristine space that meets the highest standards.
+            </p>
+            <ul>
+              <li>
+                <div class="d-flex gap-2">
+                  <div class="icon-container">
+                    <img class="w-100" src="./images/small_logo.png" alt="" />
+                  </div>
+                  <div class="choose-contains">
+                    <div class="title fs-3">Experienced Professionals</div>
+                    <p class="fs-6 fw-light">
+                      Our team consists of skilled cleaning professionals with
+                      extensive experience in the industry.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+            
+
+              <li>
+                <div class="d-flex gap-2">
+                  <div class="icon-container">
+                    <img class="w-100" src="./images/small_logo.png" alt="" />
+                  </div>
+                  <div class="choose-contains">
+                    <div class="title fs-3">Eco-Friendly Practices</div>
+                    <p class="fs-6 fw-light">
+                      We prioritize your health and the environment by using
+                      eco-friendly cleaning products and methods.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="d-flex gap-2">
+                  <div class="icon-container">
+                    <img class="w-100" src="./images/small_logo.png" alt="" />
+                  </div>
+                  <div class="choose-contains">
+                    <div class="title fs-3">Customized Solutions</div>
+                    <p class="fs-6 fw-light">
+                      Our personalized cleaning plans are designed to meet your
+                      specific needs, ensuring you receive the best service
+                      possible.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-left col-md-6 col-12">
+            <img
+              src="./images/man-yellow-shirt-is-sweeping-floor_1085346-131170.avif"
+              data-aos="fade-up"
+              style="height: 100%;"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- project Section -->
     <div class="project-section">
       <div class="container">
         <div class="tagline" data-aos="fade-up">Our Project</div>
-        <div class="title"data-aos="fade-up">We have done many latest cleaning project</div>
+        <div class="title" data-aos="fade-up">
+          We have done many latest cleaning project
+        </div>
         <div class="row">
           <div class="project-card col-12 col-md-3" data-aos="fade-up">
             <div class="project-image-container">
-              <img src="images/image_1.jpg" alt="" />
+              <img src="images/default.png" alt="" />
             </div>
             <div class="overlay">
               <a href="photo-detail.html">
@@ -796,7 +1019,7 @@ rel="stylesheet"
 
           <div class="project-card col-12 col-md-3" data-aos="fade-up">
             <div class="project-image-container">
-              <img src="images/image_1.jpg" alt="" />
+              <img src="images/default.png" alt="" />
             </div>
             <div class="overlay">
               <a href="photo-detail.html">
@@ -808,7 +1031,7 @@ rel="stylesheet"
 
           <div class="project-card col-12 col-md-3" data-aos="fade-up">
             <div class="project-image-container">
-              <img src="images/image_1.jpg" alt="" />
+              <img src="images/default.png" alt="" />
             </div>
             <div class="overlay">
               <a href="photo-detail.html">
@@ -819,7 +1042,7 @@ rel="stylesheet"
           </div>
           <div class="project-card col-12 col-md-3" data-aos="fade-up">
             <div class="project-image-container">
-              <img src="images/image_1.jpg" alt="" />
+              <img src="images/default.png" alt="" />
             </div>
             <div class="overlay">
               <a href="#">
@@ -831,7 +1054,7 @@ rel="stylesheet"
 
           <div class="project-card col-12 col-md-3" data-aos="fade-up">
             <div class="project-image-container">
-              <img src="images/image_1.jpg" alt="" />
+              <img src="images/default.png" alt="" />
             </div>
             <div class="overlay">
               <a href="#">
@@ -843,7 +1066,7 @@ rel="stylesheet"
 
           <div class="project-card col-12 col-md-3" data-aos="fade-up">
             <div class="project-image-container">
-              <img src="images/image_1.jpg" alt="" />
+              <img src="images/default.png" alt="" />
             </div>
             <div class="overlay">
               <a href="#">
@@ -855,7 +1078,7 @@ rel="stylesheet"
 
           <div class="project-card col-12 col-md-3" data-aos="fade-up">
             <div class="project-image-container">
-              <img src="images/image_1.jpg" alt="" />
+              <img src="images/default.png" alt="" />
             </div>
             <div class="overlay">
               <a href="#">
@@ -867,7 +1090,7 @@ rel="stylesheet"
 
           <div class="project-card col-12 col-md-3" data-aos="fade-up">
             <div class="project-image-container">
-              <img src="images/image_1.jpg" alt="" />
+              <img src="images/default.png" alt="" />
             </div>
             <div class="overlay">
               <a href="#">
@@ -889,7 +1112,7 @@ rel="stylesheet"
           <div class="blog-card col-12 col-md-4" data-aos="fade-up">
             <a href="detail.html">
               <div class="image-container">
-                <img class="w-100" src="./images/image_1.jpg" alt="" />
+                <img class="w-100" src="./images/default.png" alt="" />
               </div>
               <div class="blog-contains">
                 <div class="heading">10 Tips to clean your window</div>
@@ -905,7 +1128,7 @@ rel="stylesheet"
           <div class="blog-card col-12 col-md-4" data-aos="fade-up">
             <a href="detail.html">
               <div class="image-container">
-                <img class="w-100" src="./images/image_1.jpg" alt="" />
+                <img class="w-100" src="./images/default.png" alt="" />
               </div>
               <div class="blog-contains">
                 <div class="heading">10 Tips to clean your window</div>
@@ -921,7 +1144,7 @@ rel="stylesheet"
           <div class="blog-card col-12 col-md-4" data-aos="fade-up">
             <a href="detail.html">
               <div class="image-container">
-                <img class="w-100" src="./images/image_1.jpg" alt="" />
+                <img class="w-100" src="./images/default.png" alt="" />
               </div>
               <div class="blog-contains">
                 <div class="heading">10 Tips to clean your window</div>
@@ -942,7 +1165,7 @@ rel="stylesheet"
       class="video-section w-100"
       style="background-image: url('./images/image_1.jpg')"
     >
-      <div class="overlay"data-aos="fade-up">
+      <div class="overlay" data-aos="fade-up">
         <div class="title">Together we will explore new things</div>
         <a href="video-detail.html">
           <i class="fa fa-play animate__slideOutUp" aria-hidden="true"></i>
@@ -955,10 +1178,30 @@ rel="stylesheet"
       <div class="container">
         <div class="tagline" data-aos="fade-up">Price & Plans</div>
         <div class="title" data-aos="fade-up">Choose Your Perfect Plans</div>
-        <div class="row gap-5" style="justify-content: center;">
+        <div class="row gap-5" style="justify-content: center">
           <div class="package-card col-12 col-md-3 pb-4" data-aos="fade-up">
             <div class="icon-container">
-              <img class="w-100" src="./images/house.png" alt="" />
+              <img class="w-100" src="./images/small_logo.png" alt="" />
+            </div>
+            <div class="package-info">
+              <div class="heading">Basic Package</div>
+              <div class="price">149 $</div>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Bedrooms cleaning</li>
+                <li><i class="fa-solid fa-check"></i> Vacuuming</li>
+                <li><i class="fa-solid fa-check"></i> Bathroom cleaning</li>
+                <li><i class="fa-solid fa-check"></i> Mirrow cleaning</li>
+                <li><i class="fa-solid fa-check"></i> Livingroom cleaning</li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-round mr-md-4 py-2 px-4"
+                >Get Started <span class="ion-ios-arrow-forward"></span
+              ></a>
+            </div>
+          </div>
+
+          <div class="package-card col-12 col-md-3 pb-4" data-aos="fade-up">
+            <div class="icon-container">
+              <img class="w-100" src="./images/small_logo.png" alt="" />
             </div>
             <div class="package-info">
               <div class="heading">Starter</div>
@@ -978,47 +1221,7 @@ rel="stylesheet"
 
           <div class="package-card col-12 col-md-3 pb-4" data-aos="fade-up">
             <div class="icon-container">
-              <img class="w-100" src="./images/house.png" alt="" />
-            </div>
-            <div class="package-info">
-              <div class="heading">Starter</div>
-              <div class="price">Rs. 4000</div>
-              <ul>
-                <li><i class="fa-solid fa-check"></i> Bedrooms cleaning</li>
-                <li><i class="fa-solid fa-check"></i> Vacuuming</li>
-                <li><i class="fa-solid fa-check"></i> Bathroom cleaning</li>
-                <li><i class="fa-solid fa-check"></i> Mirrow cleaning</li>
-                <li><i class="fa-solid fa-check"></i> Livingroom cleaning</li>
-              </ul>
-              <a href="#" class="btn btn-primary btn-round mr-md-4 py-2 px-4"
-                >Get Started <span class="ion-ios-arrow-forward"></span
-              ></a>
-            </div>
-          </div>
-
-          <div class="package-card col-12 col-md-3 pb-4" data-aos="fade-up">
-            <div class="icon-container">
-              <img class="w-100" src="./images/house.png" alt="" />
-            </div>
-            <div class="package-info">
-              <div class="heading">Starter</div>
-              <div class="price">Rs. 4000</div>
-              <ul>
-                <li><i class="fa-solid fa-check"></i> Bedrooms cleaning</li>
-                <li><i class="fa-solid fa-check"></i> Vacuuming</li>
-                <li><i class="fa-solid fa-check"></i> Bathroom cleaning</li>
-                <li><i class="fa-solid fa-check"></i> Mirrow cleaning</li>
-                <li><i class="fa-solid fa-check"></i> Livingroom cleaning</li>
-              </ul>
-              <a href="#" class="btn btn-primary btn-round mr-md-4 py-2 px-4"
-                >Get Started <span class="ion-ios-arrow-forward"></span
-              ></a>
-            </div>
-          </div>
-
-          <div class="package-card col-12 col-md-3 pb-4" data-aos="fade-up">
-            <div class="icon-container">
-              <img class="w-100" src="./images/house.png" alt="" />
+              <img class="w-100" src="./images/small_logo.png" alt="" />
             </div>
             <div class="package-info">
               <div class="heading">Starter</div>
@@ -1043,7 +1246,10 @@ rel="stylesheet"
     <footer>
       <div class="container">
         <div class="row">
-          <div class="company-detail postion-relative col-12 col-md-3" data-aos="fade-up">
+          <div
+            class="company-detail postion-relative col-12 col-md-3"
+            data-aos="fade-up"
+          >
             <div class="footer-title">Goodwill Company</div>
             <div class="line"></div>
             <p class="gray-text">
@@ -1067,7 +1273,10 @@ rel="stylesheet"
             </div>
           </div>
 
-          <div class="latest-news postion-relative col-12 col-md-4" data-aos="fade-up">
+          <div
+            class="latest-news postion-relative col-12 col-md-4"
+            data-aos="fade-up"
+          >
             <div class="footer-title">Recent News</div>
             <div class="line"></div>
             <div class="row pb-2">
@@ -1091,7 +1300,10 @@ rel="stylesheet"
             </div>
           </div>
 
-          <div class="quick-links postion-relative col-12 col-md-2" data-aos="fade-up">
+          <div
+            class="quick-links postion-relative col-12 col-md-2"
+            data-aos="fade-up"
+          >
             <div class="footer-title">Menu</div>
             <div class="line"></div>
             <ul>
@@ -1103,7 +1315,10 @@ rel="stylesheet"
             </ul>
           </div>
 
-          <div class="contacts postion-relative col-12 col-md-3" data-aos="fade-up">
+          <div
+            class="contacts postion-relative col-12 col-md-3"
+            data-aos="fade-up"
+          >
             <div class="footer-title">Have a question</div>
             <div class="line"></div>
             <div class="row pb-3 align-items-center">
@@ -1142,33 +1357,32 @@ rel="stylesheet"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./js/app.js"></script>
 
     <!-- Masonry.js -->
-<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
 
-<!-- LightGallery.js -->
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.min.js"></script>
+    <!-- LightGallery.js -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.min.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      const jacketAd = document.getElementById("jacket-ad");
-      const closeAdButton = document.getElementById("close-ad");
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const jacketAd = document.getElementById("jacket-ad");
+        const closeAdButton = document.getElementById("close-ad");
 
-      // Set a timeout to hide the jacket ad after 3 seconds
-      setTimeout(function () {
+        // Set a timeout to hide the jacket ad after 3 seconds
+        setTimeout(function () {
           jacketAd.classList.add("hide");
-      }, 3000); // 3 seconds
+        }, 3000); // 3 seconds
 
-      // Add event listener to the close button
-      closeAdButton.addEventListener("click", function () {
+        // Add event listener to the close button
+        closeAdButton.addEventListener("click", function () {
           jacketAd.classList.add("hide");
+        });
       });
-  });
-</script>
-
+    </script>
   </body>
 </html>
